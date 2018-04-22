@@ -1,7 +1,0 @@
-D:\Projects\NeuroProjects\HashGenerator\HashGenerator\bin\Debug\HashGenerator.exe.config
-D:\Projects\NeuroProjects\neural_network\HashGenerator\HashGenerator\bin\Debug\HashGenerator.exe.config
-D:\Projects\NeuroProjects\neural_network\HashGenerator\HashGenerator\bin\Debug\HashGenerator.exe
-D:\Projects\NeuroProjects\neural_network\HashGenerator\HashGenerator\bin\Debug\HashGenerator.pdb
-D:\Projects\NeuroProjects\neural_network\HashGenerator\HashGenerator\obj\Debug\HashGenerator.csprojResolveAssemblyReference.cache
-D:\Projects\NeuroProjects\neural_network\HashGenerator\HashGenerator\obj\Debug\HashGenerator.exe
-D:\Projects\NeuroProjects\neural_network\HashGenerator\HashGenerator\obj\Debug\HashGenerator.pdb

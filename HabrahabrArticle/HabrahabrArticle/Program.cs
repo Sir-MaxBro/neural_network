@@ -137,6 +137,7 @@ namespace NeuralNetwork
         {
             public HiddenLayer(int non, int nopn, NeuronType nt, string type) 
                 : base(non, nopn, nt, type) { }
+
             public override void Recognize(Network net, Layer nextLayer)
             {
                 double[] hidden_out = new double[Neurons.Length];

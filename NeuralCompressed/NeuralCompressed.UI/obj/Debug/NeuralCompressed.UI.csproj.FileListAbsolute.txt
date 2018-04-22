@@ -1,0 +1,8 @@
+E:\Projects\GitHub\neural_network\neural_network\NeuralCompressed\NeuralCompressed.UI\bin\Debug\NeuralCompressed.UI.exe.config
+E:\Projects\GitHub\neural_network\neural_network\NeuralCompressed\NeuralCompressed.UI\bin\Debug\NeuralCompressed.UI.exe
+E:\Projects\GitHub\neural_network\neural_network\NeuralCompressed\NeuralCompressed.UI\bin\Debug\NeuralCompressed.UI.pdb
+E:\Projects\GitHub\neural_network\neural_network\NeuralCompressed\NeuralCompressed.UI\bin\Debug\NeuralCompressed.Network.dll
+E:\Projects\GitHub\neural_network\neural_network\NeuralCompressed\NeuralCompressed.UI\bin\Debug\NeuralCompressed.Network.pdb
+E:\Projects\GitHub\neural_network\neural_network\NeuralCompressed\NeuralCompressed.UI\obj\Debug\NeuralCompressed.UI.csprojResolveAssemblyReference.cache
+E:\Projects\GitHub\neural_network\neural_network\NeuralCompressed\NeuralCompressed.UI\obj\Debug\NeuralCompressed.UI.exe
+E:\Projects\GitHub\neural_network\neural_network\NeuralCompressed\NeuralCompressed.UI\obj\Debug\NeuralCompressed.UI.pdb

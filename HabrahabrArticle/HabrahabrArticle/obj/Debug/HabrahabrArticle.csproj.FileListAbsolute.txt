@@ -10,3 +10,6 @@ D:\Work\NeuroNetworkXOR\HabrahabrArticle\HabrahabrArticle\obj\Debug\HabrahabrArt
 D:\Work\NeuroNetworkXOR\HabrahabrArticle\HabrahabrArticle\bin\Debug\HabrahabrArticle.exe
 D:\Work\NeuroNetworkXOR\HabrahabrArticle\HabrahabrArticle\bin\Debug\HabrahabrArticle.pdb
 D:\Work\NeuroNetworkXOR\HabrahabrArticle\HabrahabrArticle\obj\Debug\HabrahabrArticle.csprojResolveAssemblyReference.cache
+E:\Projects\GitHub\neural_network\neural_network\HabrahabrArticle\HabrahabrArticle\bin\Debug\HabrahabrArticle.exe.config
+E:\Projects\GitHub\neural_network\neural_network\HabrahabrArticle\HabrahabrArticle\obj\Debug\HabrahabrArticle.exe
+E:\Projects\GitHub\neural_network\neural_network\HabrahabrArticle\HabrahabrArticle\obj\Debug\HabrahabrArticle.pdb

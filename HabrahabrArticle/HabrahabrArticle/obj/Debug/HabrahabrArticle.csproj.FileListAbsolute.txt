@@ -1,0 +1,12 @@
+c:\users\123\music\searches\desktop\saved games\documents\visual studio 2017\Projects\HabrahabrArticle\HabrahabrArticle\bin\Debug\HabrahabrArticle.exe.config
+c:\users\123\music\searches\desktop\saved games\documents\visual studio 2017\Projects\HabrahabrArticle\HabrahabrArticle\bin\Debug\HabrahabrArticle.exe
+c:\users\123\music\searches\desktop\saved games\documents\visual studio 2017\Projects\HabrahabrArticle\HabrahabrArticle\bin\Debug\HabrahabrArticle.pdb
+c:\users\123\music\searches\desktop\saved games\documents\visual studio 2017\Projects\HabrahabrArticle\HabrahabrArticle\obj\Debug\HabrahabrArticle.csprojResolveAssemblyReference.cache
+c:\users\123\music\searches\desktop\saved games\documents\visual studio 2017\Projects\HabrahabrArticle\HabrahabrArticle\obj\Debug\HabrahabrArticle.exe
+c:\users\123\music\searches\desktop\saved games\documents\visual studio 2017\Projects\HabrahabrArticle\HabrahabrArticle\obj\Debug\HabrahabrArticle.pdb
+D:\Work\NeuroNetworkXOR\HabrahabrArticle\HabrahabrArticle\bin\Debug\HabrahabrArticle.exe.config
+D:\Work\NeuroNetworkXOR\HabrahabrArticle\HabrahabrArticle\obj\Debug\HabrahabrArticle.exe
+D:\Work\NeuroNetworkXOR\HabrahabrArticle\HabrahabrArticle\obj\Debug\HabrahabrArticle.pdb
+D:\Work\NeuroNetworkXOR\HabrahabrArticle\HabrahabrArticle\bin\Debug\HabrahabrArticle.exe
+D:\Work\NeuroNetworkXOR\HabrahabrArticle\HabrahabrArticle\bin\Debug\HabrahabrArticle.pdb
+D:\Work\NeuroNetworkXOR\HabrahabrArticle\HabrahabrArticle\obj\Debug\HabrahabrArticle.csprojResolveAssemblyReference.cache

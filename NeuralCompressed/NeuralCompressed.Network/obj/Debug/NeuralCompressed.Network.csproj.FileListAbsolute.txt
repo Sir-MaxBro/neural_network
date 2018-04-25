@@ -3,3 +3,8 @@ E:\Projects\GitHub\neural_network\neural_network\NeuralCompressed\NeuralCompress
 E:\Projects\GitHub\neural_network\neural_network\NeuralCompressed\NeuralCompressed.Network\bin\Debug\NeuralCompressed.Network.pdb
 E:\Projects\GitHub\neural_network\neural_network\NeuralCompressed\NeuralCompressed.Network\obj\Debug\NeuralCompressed.Network.dll
 E:\Projects\GitHub\neural_network\neural_network\NeuralCompressed\NeuralCompressed.Network\obj\Debug\NeuralCompressed.Network.pdb
+E:\Projects\GitHub\neural_network\NeuralCompressed\NeuralCompressed.Network\bin\Debug\NeuralCompressed.Network.dll
+E:\Projects\GitHub\neural_network\NeuralCompressed\NeuralCompressed.Network\bin\Debug\NeuralCompressed.Network.pdb
+E:\Projects\GitHub\neural_network\NeuralCompressed\NeuralCompressed.Network\obj\Debug\NeuralCompressed.Network.csprojResolveAssemblyReference.cache
+E:\Projects\GitHub\neural_network\NeuralCompressed\NeuralCompressed.Network\obj\Debug\NeuralCompressed.Network.dll
+E:\Projects\GitHub\neural_network\NeuralCompressed\NeuralCompressed.Network\obj\Debug\NeuralCompressed.Network.pdb

@@ -4,42 +4,39 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NeuralCompressed.Network.Abstract;
+using NeuralCompressed.Network.Attributes;
 
 namespace NeuralCompressed.Network
 {
-    public class OutputLayer : Layer
+    [LayerMemory("output_layer")]
+    internal class OutputLayer : Layer
     {
-        public OutputLayer(int neuronsCount, int previousNeuronsCount, NeuronType neuronType)
-            : base(neuronsCount, previousNeuronsCount, neuronType) { }
+        public OutputLayer(int neuronsCount, int previousNeuronsCount)
+            : base(neuronsCount, previousNeuronsCount) { }
 
         public override void Recognize(NeuralNetwork network, Layer nextLayer)
         {
             for (int i = 0; i < Neurons.Length; ++i)
             {
-                network.fact[i] = Neurons[i].Output;
+                network._outputs[i] = Neurons[i].Output;
             }
         }
 
         public override double[] BackwardPass(double[] errors)
         {
-            double[] gr_sum = new double[_previousNeuronsCount];
-            for (int j = 0; j < gr_sum.Length; ++j)//вычисление градиентных сумм выходного слоя
+            double[] gradientSum = new double[_previousNeuronsCount];
+            for (int i = 0; i < gradientSum.Length; ++i)//вычисление градиентных сумм выходного слоя
             {
                 double sum = 0;
-                for (int k = 0; k < Neurons.Length; ++k)
+                for (int j = 0; j < Neurons.Length; ++j)
                 {
-                    sum += Neurons[k].Weights[j] * Neurons[k].Gradientor(errors[k], Neurons[k].Derivativator(Neurons[k].Output), 0);//через ошибку и производную
+                    double gradientor = Neurons[j].Gradientor(errors[j], Neurons[j].Derivativator(Neurons[j].Output), 0);
+                    sum += Neurons[j].Weights[i] * gradientor; //через ошибку и производную
+                    Neurons[j].Weights[i] += Neurons[j].Inputs[i] * LEARNING_GRATE * gradientor; //коррекция весов         
                 }
-                gr_sum[j] = sum;
+                gradientSum[i] = sum;
             }
-            for (int i = 0; i < _neuronsCount; ++i)
-            {
-                for (int n = 0; n < _previousNeuronsCount; ++n)
-                {
-                    Neurons[i].Weights[n] += LEARNING_GRATE * Neurons[i].Inputs[n] * Neurons[i].Gradientor(errors[i], Neurons[i].Derivativator(Neurons[i].Output), 0);//коррекция весов
-                }
-            }
-            return gr_sum;
+            return gradientSum;
         }
     }
 }

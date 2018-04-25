@@ -40,12 +40,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\Layer.cs" />
+    <Compile Include="Attributes\MemoryFileAttribute.cs" />
+    <Compile Include="Entities\Memory.cs" />
+    <Compile Include="Infrastructure\NetworkTrainer.cs" />
     <Compile Include="Layers\HiddenLayer.cs" />
     <Compile Include="Entities\NeuralNetwork.cs" />
     <Compile Include="Layers\OutputLayer.cs" />
-    <Compile Include="Enums\MemoryMode.cs" />
     <Compile Include="Entities\Neuron.cs" />
-    <Compile Include="Enums\NeuronType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

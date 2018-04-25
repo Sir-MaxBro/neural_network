@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace NeuralCompressed.Network.Entities
 {
-    public class Neuron
+    internal class Neuron
     {
-        private NeuronType _type;
         private double[] _weights;
         private double[] _inputs;
 
-        public Neuron(double[] inputs, double[] weights, NeuronType type)
+        public Neuron(double[] weights)
+            : this(null, weights) { }
+
+        public Neuron(double[] inputs, double[] weights)
         {
-            _type = type;
             _weights = weights;
             _inputs = inputs;
         }
@@ -51,9 +52,9 @@ namespace NeuralCompressed.Network.Entities
             return outsignal * (1.0d - outsignal); //формула производной для текущей функции активации
         }
 
-        public double Gradientor(double error, double dif, double g_sum)
+        public double Gradientor(double error, double dif, double gradientSum)
         {
-            return (_type == NeuronType.Output) ? error * dif : g_sum * dif; //g_sum - это сумма градиентов следующего слоя
+            return error * dif + gradientSum * dif; //g_sum - это сумма градиентов следующего слоя
         }
     }
 }

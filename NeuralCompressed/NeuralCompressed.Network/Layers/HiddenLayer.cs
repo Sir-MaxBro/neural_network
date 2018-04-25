@@ -4,13 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NeuralCompressed.Network.Abstract;
+using NeuralCompressed.Network.Attributes;
 
 namespace NeuralCompressed.Network
 {
-    public class HiddenLayer : Layer
+    [LayerMemory("hidden_layer")]
+    internal class HiddenLayer : Layer
     {
-        public HiddenLayer(int neuronsCount, int previousNeuronsCount, NeuronType neuronType)
-            : base(neuronsCount, previousNeuronsCount, neuronType) { }
+        public HiddenLayer(int neuronsCount, int previousNeuronsCount)
+            : base(neuronsCount, previousNeuronsCount) { }
 
         public override void Recognize(NeuralNetwork net, Layer nextLayer)
         {
@@ -22,9 +24,9 @@ namespace NeuralCompressed.Network
             nextLayer.Data = hiddenOut;
         }
 
-        public override double[] BackwardPass(double[] gr_sums)
+        public override double[] BackwardPass(double[] gradientSums)
         {
-            double[] gr_sum = null;
+            double[] gradientSum = null;
             //сюда можно всунуть вычисление градиентных сумм для других скрытых слоёв
             //но градиенты будут вычисляться по-другому, то есть
             //через градиентные суммы следующего слоя и производные
@@ -32,10 +34,10 @@ namespace NeuralCompressed.Network
             {
                 for (int n = 0; n < _previousNeuronsCount; ++n)
                 {
-                    Neurons[i].Weights[n] += LEARNING_GRATE * Neurons[i].Inputs[n] * Neurons[i].Gradientor(0, Neurons[i].Derivativator(Neurons[i].Output), gr_sums[i]);//коррекция весов
+                    Neurons[i].Weights[n] += LEARNING_GRATE * Neurons[i].Inputs[n] * Neurons[i].Gradientor(0, Neurons[i].Derivativator(Neurons[i].Output), gradientSums[i]);//коррекция весов
                 }
             }
-            return gr_sum;
+            return gradientSum;
         }
     }
 }

@@ -8,16 +8,24 @@ namespace NeuralCompressed.UI
     {
         static void Main(string[] args)
         {
+            //IList<Tuple<double[], double[]>> trainset = new List<Tuple<double[], double[]>>
+            //{
+            //    Tuple.Create<double[], double[]>(new double[]{ 97, 98, 97, 98, 97, 98, 97, 98 }, new double[]{ 1.0 / 97, 1.0 / 98 }),
+            //    Tuple.Create<double[], double[]>(new double[]{ 98, 98, 98, 98, 98, 98, 98, 98 }, new double[]{ 1.0 / 98, 1.0 / 98 }),
+            //    Tuple.Create<double[], double[]>(new double[]{ 95, 101, 95, 101, 95, 101, 95, 101 }, new double[]{ 1.0 / 95, 1.0 / 101 }),
+            //    Tuple.Create<double[], double[]>(new double[]{ 120, 121, 120, 121, 120, 121, 120, 121 }, new double[]{ 1.0 / 120, 1.0 / 121 })
+            //};
+
             IList<Tuple<double[], double[]>> trainset = new List<Tuple<double[], double[]>>
             {
-                Tuple.Create<double[], double[]>(new double[]{ 97, 98, 97, 98 }, new double[]{ 1.0 / 97, 1.0 / 98 }),
-                Tuple.Create<double[], double[]>(new double[]{ 98, 98, 98, 98 }, new double[]{ 1.0 / 98, 1.0 / 98 }),
-                Tuple.Create<double[], double[]>(new double[]{ 95, 101, 95, 101 }, new double[]{ 1.0 / 95, 1.0 / 101 }),
-                Tuple.Create<double[], double[]>(new double[]{ 120, 121, 120, 121 }, new double[]{ 1.0 / 120, 1.0 / 121 })
+                Tuple.Create<double[], double[]>(new double[]{ 1, 0, 1, 0, 1, 0, 1, 0 }, new double[]{ 1, 0 }),
+                Tuple.Create<double[], double[]>(new double[]{ 0, 1, 0, 1, 0, 1, 0, 1 }, new double[]{ 0, 1 }),
+                Tuple.Create<double[], double[]>(new double[]{ 0, 0, 0, 0, 0, 0, 0, 0 }, new double[]{ 0, 0 }),
+                Tuple.Create<double[], double[]>(new double[]{ 1, 1, 1, 1, 1, 1, 1, 1 }, new double[]{ 1, 1 })
             };
 
             NeuralNetwork net = NeuralNetwork.GetInstance(inputs: null);
-            NetworkTrainer.Train(net, trainset);
+            NetworkTrainer.Train(net/*, trainset*/);
             NetworkTrainer.Test(net, trainset);
 
             Console.ReadKey();

@@ -45,15 +45,16 @@ namespace NeuralCompressed.Network.Abstract
             set { _neurons = value; }
         }
 
-        public double[] Data//я подал null на входы нейронов, так как
-        {//сначала нужно будет преобразовать информацию
-            set//(видео, изображения, etc.)
-            {//а загружать input'ы нейронов слоя надо не сразу,
+        public double[] Data
+        {
+            set
+            {
                 for (int i = 0; i < Neurons.Length; ++i)
                 {
+                    // transform input value
                     Neurons[i].Inputs = value.Select(x => x == 0 ? x : 1.0d / x).ToArray();
                 }
-            }//а только после вычисления выходов предыдущего слоя
+            }
         }
 
         public double[,] GetWeights()

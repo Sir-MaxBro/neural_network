@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trainsets>
+    <trainset>
+        <inputs>
+            <value>97</value>
+            <value>98</value>
+            <value>97</value>
+            <value>98</value>
+            <value>97</value>
+            <value>98</value>
+            <value>97</value>
+            <value>98</value>
+        </inputs>
+        <outputs>
+            <value>97</value>
+            <value>98</value>
+        </outputs>
+    </trainset>
+</trainsets>

@@ -54,7 +54,7 @@ namespace NeuralCompressed.Network.Entities
 
         public double Gradientor(double error, double dif, double gradientSum)
         {
-            return error * dif + gradientSum * dif; //g_sum - это сумма градиентов следующего слоя
+            return error * dif + gradientSum * dif; //gradientSum - это сумма градиентов следующего слоя
         }
     }
 }

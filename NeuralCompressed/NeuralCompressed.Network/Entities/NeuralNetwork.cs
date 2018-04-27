@@ -8,9 +8,8 @@ namespace NeuralCompressed.Network
 {
     public class NeuralNetwork
     {
-        internal HiddenLayer hiddenLayer = new HiddenLayer(8, 4);
-        internal OutputLayer outputLayer = new OutputLayer(2, 8);
-
+        internal HiddenLayer hiddenLayer = new HiddenLayer(16, 8);
+        internal OutputLayer outputLayer = new OutputLayer(2, 16);
 
         public double[] _outputs = new double[2]; //вывод сети
         private double[] _inputs; //входы
@@ -36,7 +35,6 @@ namespace NeuralCompressed.Network
             set { _inputs = value; }
         }
 
-        // сделать ввод одних данных
         public double[] Outputs()
         {
             hiddenLayer.Data = _inputs;
